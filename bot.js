@@ -701,7 +701,7 @@ client.on("message", message => {
 
 
 client.on('message', async message => {
-  if(message.content.startsWith(prefix + "dfsgrfghregrgrgreg")) {
+  if(message.content.startsWith(prefix + "tstaff")) {
     await message.channel.send("** ❓  تقدر تفتح مايك ويكون مايكك جيد**").then(e => {
     let filter = m => m.author.id === message.author.id
     let lan = '';
@@ -1506,7 +1506,7 @@ msg.reply('اهلين منور حبي ')
 
 
 client.on('guildMemberAdd', member => {
-    let channel = member.guild.channels.find('name', 'ترحيب');
+    let channel = member.guild.channels.find('name', '・leaders');
     let memberavatar = member.user.avatarURL
       if (!channel) return;
     let embed = new Discord.RichEmbed()
@@ -1537,7 +1537,7 @@ client.on('guildMemberAdd', member => {
         .setColor('RED')
         .setFooter(`==== نــتــمــنــآ لــكــم آســتــمـــتــآع ====`, 'https://cdn.discordapp.com/attachments/397818254439219217/399292026782351381/shy.png')
     
-    var channel =member.guild.channels.find('name', 'توديع')
+    var channel =member.guild.channels.find('name', '・leaders')
     if (!channel) return;
     channel.send({embed : embed});
     })
